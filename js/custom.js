@@ -59,7 +59,8 @@ $(document).ready(function(){
 		
 		// Detect section and add specific classes
 		$('.effects').each(function(){
-			if ($(window).scrollTop() > ($(this).offset().top-half_of_win_height)) {
+			alert(half_of_win_height);
+			if ($(window).scrollTop() > ($(this).offset().top - half_of_win_height)) {
 				if ($(this).hasClass('effects--fade')) {
 					$(this).addClass('fadeIn');
 				}
