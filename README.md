@@ -56,7 +56,7 @@ Instead of letting the browser randomly stretch text fields and break background
 To make sure the animations ran smoothly without slowing down the browser, I designed a multi-part system that runs as the user scrolls:
 
 **The First-Scroll Snapshot Trigger**<br />
-To give the Homepage a modern feel, I wrote a piece of code that listens to the user's very first scroll input. By using a state tracker (first_scroll) alongside a 250-millisecond delay timer (scrollTimer), the script captures the user's initial downward scroll. If it detects a genuine scroll while on the main banner, it automatically triggers a click on the second navigation dot item (ul.page-nav li:nth-of-type(2) a), smoothly scrolling the visitor down to the next section.
+To give the Homepage a modern feel, I wrote a piece of code that listens to the user's very first scroll input. By using a state tracker alongside a 250-millisecond delay timer, the script captures the user's initial downward scroll. If it detects a genuine scroll while on the main banner, it automatically triggers a click on the second navigation dot item, smoothly scrolling the visitor down to the next section.
 
 **Smooth Viewport Class Injection**<br />
 Instead of constantly forcing the browser to recalculate heavy styles, the script uses simple math to track scroll positions. As the user scrolls, a loop checks elements that have the .effects tag. If the user passes a specific point on the screen, the engine instantly applies the correct CSS animation class.
@@ -71,7 +71,7 @@ To make sure the site was easy to explore, I wrote logic that changes the menu's
 I coded a feature that watches a specific point on the page. The moment a user scrolls past this marker, the script adds a `.sticky` class to lock the main navigation bar to the top of the screen so it is always accessible.
 
 **Asynchronous Global Link Re-routing**<br />
-Because the primary menu links directly to single-page sections (like #contact-me) on the Homepage, those same links would break if clicked from a separate blog page. To fix this, I wrote an automated check script. If it finds that a visitor is on a blog page, it changes the menu link into a full, absolute web address (http://hostname#contact-me), sending the user back home seamlessly.
+Because the primary menu links directly to single-page sections (like #contact-me) on the Homepage, those same links would break if clicked from a separate blog page. To fix this, I wrote an automated check script. If it finds that a visitor is on a blog page, it changes the menu link into a full, absolute web address (`http://hostname#contact-me`), sending the user back home seamlessly.
 
 ### 5. Quality Assurance, Responsiveness, and Compatibility
 Because interactive scrolling features can easily break on mobile screens, I tested mobile devices and web browsers at every step of the project:
