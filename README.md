@@ -47,7 +47,7 @@ Because the project was delivered entirely as Photoshop layers by the internal d
 
 To keep the code clean and give the design team an easy way to choose animations, I created a list of custom animation classes in CSS (`.effects--fade`, `.effects--slide-left`, `.effects--slide-down`). This separated the visual style from the javascript behavior scripts. This meant adding or tweaking animations on a new section could be done directly in the page setup without having to touch or risk breaking the core JavaScript logic.
 
-### 2. Engineering Viewport Math & the Layout Scale Engine<br />
+### 2. Engineering Viewport Math & the Layout Scale Engine
 To guarantee that every section perfectly filled the user’s screen when the page loaded or changed size, I wrote a central layout setup function called setters() in JavaScript.
 
 Instead of letting the browser randomly stretch text fields and break background lines, this code measures the exact height of the browser window, forces that height onto each section, and perfectly centers the text inside the section vertically. I hooked this function into a window resize listener loop (`$(window).resize`), ensuring that the design looks flawless even if a user turns their tablet sideways or resizes their desktop browser window.
