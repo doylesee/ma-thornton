@@ -6,7 +6,7 @@
 </pre>
 &nbsp;<strong><a href="https://doylesee.github.io/ma-thornton/" rel="noopener noreferrer">View project</a></strong>
 
-<p><a href="https://doylesee.github.io/ma-thornton/" rel="noopener noreferrer"><img src="https://doylesee.github.io/ma-thornton/ma-thornton/thumbnail.jpg" /></a></p>
+<p><a href="https://doylesee.github.io/ma-thornton/" rel="noopener noreferrer"><img src="https://doylesee.github.io/ma-thornton/thumbnail.jpg" /></a></p>
 <br />
 
 ## The Challenge
